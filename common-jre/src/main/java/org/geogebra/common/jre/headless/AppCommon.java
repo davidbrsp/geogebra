@@ -94,7 +94,7 @@ public class AppCommon extends App {
 		Log.setLogger(new Log() {
 
 			@Override
-			protected void print(String logEntry, Level level) {
+			public void log(Level level, Object logEntry, int depth) {
 				System.out.println(logEntry); // NOPMD
 			}
 

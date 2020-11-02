@@ -28,7 +28,7 @@ public class AppMocker {
 	private static class MyLog extends Log {
 
 		@Override
-		protected void print(String logEntry, Level level) {
+		public void log(Level level, Object logEntry, int depth) {
 			System.out.println(logEntry);
 		}
 
